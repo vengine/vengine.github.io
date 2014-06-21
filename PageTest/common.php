@@ -1,5 +1,6 @@
 <html>
 <body>
-<p>您的称呼是：<?php echo $_POST["nickname"]; ?></p>
+Welcome <?php echo $_POST["name"]; ?>.<br />
+You are <?php echo $_POST["age"]; ?> years old.
 </body>
 </html>
