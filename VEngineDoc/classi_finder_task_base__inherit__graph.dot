@@ -1,0 +1,20 @@
+digraph "iFinderTaskBase"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="iFinderTaskBase",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="xhn::thread::task",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classxhn_1_1thread_1_1task.html"];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="RefObject",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_ref_object.html"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="FileSystemIconTask",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_file_system_icon_task.html"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="MultiIconTask",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_multi_icon_task.html"];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="RarIconTask",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_rar_icon_task.html"];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="x7zIconTask",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classx7z_icon_task.html"];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="ZipIconTask",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_zip_icon_task.html"];
+}

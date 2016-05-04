@@ -1,0 +1,30 @@
+digraph "VSketchBookConfig"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="VSketchBookConfig",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="MemObject",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_mem_object.html"];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" plaster_info" ,fontname="Helvetica"];
+  Node3 [label="VSketchInfo",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_v_sketch_info.html",tooltip="VSketchInfo. "];
+  Node4 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" textureName" ,fontname="Helvetica"];
+  Node4 [label="xhn::static_string",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classxhn_1_1static__string.html"];
+  Node4 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" empty_string" ,fontname="Helvetica"];
+  Node5 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" sketch_info_array" ,fontname="Helvetica"];
+  Node5 [label="xhn::vector\< VSketchInfo,\l FGetPixelFormatRealSizeProc,\l FPixelFormatCtorProc \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classxhn_1_1vector.html"];
+  Node6 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="RefObject",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_ref_object.html"];
+  Node7 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" weak_count" ,fontname="Helvetica"];
+  Node7 [label="WeakCounter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_weak_counter.html",tooltip="WeakCounter. "];
+  Node2 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" lock" ,fontname="Helvetica"];
+  Node8 [label="RefSpinLock",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_ref_spin_lock.html"];
+  Node6 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ref_object" ,fontname="Helvetica"];
+  Node9 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_dest" ,fontname="Helvetica"];
+  Node9 [label="xhn::FDestProc\< VSketchInfo \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structxhn_1_1_f_dest_proc.html"];
+  Node10 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_ctor" ,fontname="Helvetica"];
+  Node10 [label="FPixelFormatCtorProc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_f_pixel_format_ctor_proc.html"];
+  Node11 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_get_elem_real_size" ,fontname="Helvetica"];
+  Node11 [label="FGetPixelFormatRealSizeProc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_f_get_pixel_format_real_size_proc.html"];
+}

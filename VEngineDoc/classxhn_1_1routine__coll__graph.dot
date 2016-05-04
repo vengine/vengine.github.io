@@ -1,0 +1,21 @@
+digraph "xhn::routine"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="xhn::routine",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="xhn::thread::task",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classxhn_1_1thread_1_1task.html"];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="RefObject",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_ref_object.html"];
+  Node4 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" weak_count" ,fontname="Helvetica"];
+  Node4 [label="WeakCounter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_weak_counter.html",tooltip="WeakCounter. "];
+  Node5 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="MemObject",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_mem_object.html"];
+  Node6 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" lock" ,fontname="Helvetica"];
+  Node6 [label="RefSpinLock",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_ref_spin_lock.html"];
+  Node3 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ref_object" ,fontname="Helvetica"];
+  Node7 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_receipt" ,fontname="Helvetica"];
+  Node7 [label="xhn::SmartPtr\< receipt \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classxhn_1_1_smart_ptr.html"];
+  Node8 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_project" ,fontname="Helvetica"];
+  Node8 [label="xhn::SmartPtr\< project \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classxhn_1_1_smart_ptr.html"];
+}

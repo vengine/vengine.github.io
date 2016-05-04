@@ -1,0 +1,26 @@
+digraph "xhn::GCDouble"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="xhn::GCDouble",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="GCObject",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_g_c_object.html"];
+  Node3 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" gcNode" ,fontname="Helvetica"];
+  Node3 [label="GCNode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_g_c_node.html",tooltip="#define GC_DEBUG "];
+  Node4 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="MemObject",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_mem_object.html"];
+  Node5 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" attachedNodes" ,fontname="Helvetica"];
+  Node5 [label="xhn::set\< GCNode * \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classxhn_1_1set.html"];
+  Node6 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="RefObject",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_ref_object.html"];
+  Node7 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" weak_count" ,fontname="Helvetica"];
+  Node7 [label="WeakCounter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_weak_counter.html",tooltip="WeakCounter. "];
+  Node4 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" lock" ,fontname="Helvetica"];
+  Node8 [label="RefSpinLock",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_ref_spin_lock.html"];
+  Node6 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ref_object" ,fontname="Helvetica"];
+  Node3 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" prev\nnext" ,fontname="Helvetica"];
+  Node9 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" gc" ,fontname="Helvetica"];
+  Node9 [label="GarbageCollector",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_garbage_collector.html"];
+  Node4 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

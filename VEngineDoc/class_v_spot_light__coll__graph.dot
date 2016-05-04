@@ -1,0 +1,38 @@
+digraph "VSpotLight"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="VSpotLight",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="VLight",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_v_light.html",tooltip="VLight 灯光基类 "];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="RefObject",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_ref_object.html"];
+  Node4 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" weak_count" ,fontname="Helvetica"];
+  Node4 [label="WeakCounter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_weak_counter.html",tooltip="WeakCounter. "];
+  Node5 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="MemObject",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_mem_object.html"];
+  Node6 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" lock" ,fontname="Helvetica"];
+  Node6 [label="RefSpinLock",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_ref_spin_lock.html"];
+  Node3 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ref_object" ,fontname="Helvetica"];
+  Node7 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_shadowEmitterArgumentArray" ,fontname="Helvetica"];
+  Node7 [label="VShadowEmitterArgument",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_v_shadow_emitter_argument.html"];
+  Node8 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" shadowTexture" ,fontname="Helvetica"];
+  Node8 [label="xhn::SmartPtr\< VTextureBase \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classxhn_1_1_smart_ptr.html"];
+  Node9 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" shadowTextureName" ,fontname="Helvetica"];
+  Node9 [label="xhn::static_string",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classxhn_1_1static__string.html"];
+  Node9 -> Node9 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" empty_string" ,fontname="Helvetica"];
+  Node10 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" lightCamera" ,fontname="Helvetica"];
+  Node10 [label="xhn::SmartPtr\< VCamera \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classxhn_1_1_smart_ptr.html"];
+  Node11 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_currentData\nm_nextData" ,fontname="Helvetica"];
+  Node11 [label="VLight::LightData",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_v_light_1_1_light_data.html"];
+  Node12 -> Node11 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_direction\nm_position" ,fontname="Helvetica"];
+  Node12 [label="VFloat3",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_v_float3.html"];
+  Node13 -> Node12 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_float3" ,fontname="Helvetica"];
+  Node13 [label="__m128_t_",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct____m128__t__.html"];
+  Node14 -> Node11 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_color" ,fontname="Helvetica"];
+  Node14 [label="VColor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_v_color.html"];
+  Node14 -> Node14 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" BlueColor\nRedColor\nClearColor\nGreenColor\nBlackColor\nWhiteColor" ,fontname="Helvetica"];
+  Node15 -> Node11 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_inner\nm_outer" ,fontname="Helvetica"];
+  Node15 [label="Radian",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_radian.html"];
+}

@@ -1,0 +1,14 @@
+digraph "VBlurryTextureRenderer"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="VBlurryTextureRenderer",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="VForwardRenderer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_v_forward_renderer.html",tooltip="VForwardRenderer 前向渲染器的 "];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="VExtendedRenderer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_v_extended_renderer.html",tooltip="VExtendedRenderer 扩展渲染器 "];
+  Node4 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="VRendererBase",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_v_renderer_base.html",tooltip="VRendererBase 渲染器基类 "];
+  Node5 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="RefObject",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_ref_object.html"];
+}

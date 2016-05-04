@@ -1,0 +1,45 @@
+digraph "xhn::routine_pool"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="xhn::routine_pool",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="RefObject",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_ref_object.html"];
+  Node3 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" weak_count" ,fontname="Helvetica"];
+  Node3 [label="WeakCounter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_weak_counter.html",tooltip="WeakCounter. "];
+  Node4 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="MemObject",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_mem_object.html"];
+  Node5 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" lock" ,fontname="Helvetica"];
+  Node5 [label="RefSpinLock",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_ref_spin_lock.html"];
+  Node2 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ref_object" ,fontname="Helvetica"];
+  Node6 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_routine_agent" ,fontname="Helvetica"];
+  Node6 [label="xhn::SmartPtr\< routine\l_agent \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classxhn_1_1_smart_ptr.html"];
+  Node7 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_lock" ,fontname="Helvetica"];
+  Node7 [label="xhn::SpinLock",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classxhn_1_1_spin_lock.html",tooltip="SpinLock. "];
+  Node2 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_unused_routines" ,fontname="Helvetica"];
+  Node8 [label="xhn::list\< xhn::thread\l::task_ptr \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classxhn_1_1list.html"];
+  Node2 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 -> Node8 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_allocator" ,fontname="Helvetica"];
+  Node9 [label="xhn::FListNodeAllocator\l\< xhn::thread::task_ptr \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classxhn_1_1_f_list_node_allocator.html"];
+  Node10 -> Node8 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_head\nm_tail" ,fontname="Helvetica"];
+  Node10 [label="xhn::list_node\< T \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classxhn_1_1list__node.html"];
+  Node4 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 -> Node10 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_iter_prev\nm_iter_next" ,fontname="Helvetica"];
+  Node11 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_used_routines" ,fontname="Helvetica"];
+  Node11 [label="xhn::map\< xhn::receipt\l *, xhn::thread::task_ptr \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classxhn_1_1map.html"];
+  Node2 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_thread_pool" ,fontname="Helvetica"];
+  Node12 [label="xhn::concurrent_thread_pool",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classxhn_1_1concurrent__thread__pool.html",tooltip="concurrent_thread_pool "];
+  Node2 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 -> Node12 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_threads" ,fontname="Helvetica"];
+  Node13 [label="xhn::vector\< xhn::SmartPtr \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classxhn_1_1vector.html"];
+  Node2 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 -> Node13 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_get_elem_real_size" ,fontname="Helvetica"];
+  Node14 [label="xhn::FGetElementRealSize\lProc\< xhn::SmartPtr \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structxhn_1_1_f_get_element_real_size_proc.html"];
+  Node15 -> Node13 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_dest" ,fontname="Helvetica"];
+  Node15 [label="xhn::FDestProc\< xhn\l::SmartPtr \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structxhn_1_1_f_dest_proc.html"];
+  Node16 -> Node13 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_ctor" ,fontname="Helvetica"];
+  Node16 [label="xhn::FCtorProc\< xhn\l::SmartPtr \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structxhn_1_1_f_ctor_proc.html"];
+}

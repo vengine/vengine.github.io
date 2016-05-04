@@ -1,0 +1,41 @@
+digraph "OpenGLException"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="OpenGLException",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Exception",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_exception.html"];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="exception",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="MaterialException",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_material_exception.html"];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="MaterialArgumentDoesNotExist\lException",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_material_argument_does_not_exist_exception.html"];
+  Node4 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="MaterialArgumentInvalidFormat\lException",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_material_argument_invalid_format_exception.html"];
+  Node4 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="MaterialParserException",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_material_parser_exception.html"];
+  Node4 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="QuantityInvalidTypeException",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_quantity_invalid_type_exception.html"];
+  Node4 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="ShaderInvalidOperationException",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_shader_invalid_operation_exception.html"];
+  Node4 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="ShaderNodeException",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_shader_node_exception.html"];
+  Node10 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="ShaderNodeInvalidName",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_shader_node_invalid_name.html"];
+  Node4 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="ShaderObjectInvalidTypeException",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_shader_object_invalid_type_exception.html"];
+  Node4 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="ShaderVectorInvalidAssignment\lException",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_shader_vector_invalid_assignment_exception.html"];
+  Node4 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="SymbolValueInvalidTypeException",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_symbol_value_invalid_type_exception.html"];
+  Node1 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="TextureException",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_texture_exception.html"];
+  Node15 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="TextureCanNotLockWithNoninternal\lPixelBuffer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_texture_can_not_lock_with_noninternal_pixel_buffer.html"];
+  Node1 -> Node17 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="VertexDeclarationLackPosition\lStreamException",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_vertex_declaration_lack_position_stream_exception.html"];
+  Node1 -> Node18 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 [label="VertexStreamLackPosition\lStreamException",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_vertex_stream_lack_position_stream_exception.html"];
+}

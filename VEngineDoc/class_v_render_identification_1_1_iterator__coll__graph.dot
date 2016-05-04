@@ -1,0 +1,39 @@
+digraph "VRenderIdentification::Iterator"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="VRenderIdentification\l::Iterator",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_vertexDeclaration" ,fontname="Helvetica"];
+  Node2 [label="VVertexDeclaration",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_v_vertex_declaration.html"];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="MemObject",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_mem_object.html"];
+  Node4 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_elements" ,fontname="Helvetica"];
+  Node4 [label="xhn::vector\< VVertexDeclaration\l::Element \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classxhn_1_1vector.html"];
+  Node5 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="RefObject",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_ref_object.html"];
+  Node6 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" weak_count" ,fontname="Helvetica"];
+  Node6 [label="WeakCounter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_weak_counter.html",tooltip="WeakCounter. "];
+  Node3 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" lock" ,fontname="Helvetica"];
+  Node7 [label="RefSpinLock",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_ref_spin_lock.html"];
+  Node5 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ref_object" ,fontname="Helvetica"];
+  Node8 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_dest" ,fontname="Helvetica"];
+  Node8 [label="xhn::FDestProc\< VVertexDeclaration\l::Element \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structxhn_1_1_f_dest_proc.html"];
+  Node9 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_ctor" ,fontname="Helvetica"];
+  Node9 [label="xhn::FCtorProc\< VVertexDeclaration\l::Element \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structxhn_1_1_f_ctor_proc.html"];
+  Node10 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_get_elem_real_size" ,fontname="Helvetica"];
+  Node10 [label="xhn::FGetElementRealSize\lProc\< VVertexDeclaration\l::Element \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structxhn_1_1_f_get_element_real_size_proc.html"];
+  Node11 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_declString" ,fontname="Helvetica"];
+  Node11 [label="xhn::static_string",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classxhn_1_1static__string.html"];
+  Node11 -> Node11 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" empty_string" ,fontname="Helvetica"];
+  Node12 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_vidIter\nm_vidArray" ,fontname="Helvetica"];
+  Node12 [label="xhn::vector\< VID \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classxhn_1_1vector.html"];
+  Node5 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 -> Node12 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_dest" ,fontname="Helvetica"];
+  Node13 [label="xhn::FDestProc\< VID \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structxhn_1_1_f_dest_proc.html"];
+  Node14 -> Node12 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_get_elem_real_size" ,fontname="Helvetica"];
+  Node14 [label="xhn::FGetElementRealSize\lProc\< VID \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structxhn_1_1_f_get_element_real_size_proc.html"];
+  Node15 -> Node12 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_ctor" ,fontname="Helvetica"];
+  Node15 [label="xhn::FCtorProc\< VID \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structxhn_1_1_f_ctor_proc.html"];
+}

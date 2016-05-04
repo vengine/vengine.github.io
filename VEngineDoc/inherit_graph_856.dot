@@ -1,0 +1,7 @@
+digraph "Graphical Class Hierarchy"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="xhn::rbtree\< xhn::string,\l xhn::pair\< xhn::string,\l xhn::string \>, FLessProc\l\< xhn::string \>, FMapNodeAllocator\l\< xhn::string, xhn::pair\< xhn::\lstring, xhn::string \> \> \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classxhn_1_1rbtree.html"];
+}

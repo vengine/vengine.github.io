@@ -1,0 +1,37 @@
+digraph "SpriteElement"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="SpriteElement",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="SpriteElementBase",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_sprite_element_base.html",tooltip="SpriteElementBase. "];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="RefObject",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_ref_object.html"];
+  Node4 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" weak_count" ,fontname="Helvetica"];
+  Node4 [label="WeakCounter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_weak_counter.html",tooltip="WeakCounter. "];
+  Node5 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="MemObject",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_mem_object.html"];
+  Node6 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" lock" ,fontname="Helvetica"];
+  Node6 [label="RefSpinLock",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_ref_spin_lock.html"];
+  Node3 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ref_object" ,fontname="Helvetica"];
+  Node7 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_fourBorders" ,fontname="Helvetica"];
+  Node7 [label="FourBorders",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_four_borders.html"];
+  Node5 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" rightBorder\nleftBorder\nbottomBorder\ntopBorder" ,fontname="Helvetica"];
+  Node8 [label="Border",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_border.html"];
+  Node5 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 -> Node8 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" origin\nnormal" ,fontname="Helvetica"];
+  Node9 [label="__m128_t_",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct____m128__t__.html"];
+  Node10 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_transform" ,fontname="Helvetica"];
+  Node10 [label="Matrix4x4",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_matrix4x4.html"];
+  Node11 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_texturename" ,fontname="Helvetica"];
+  Node11 [label="xhn::static_string",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classxhn_1_1static__string.html"];
+  Node11 -> Node11 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" empty_string" ,fontname="Helvetica"];
+  Node12 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_rect" ,fontname="Helvetica"];
+  Node12 [label="SpriteRect",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_sprite_rect.html"];
+  Node13 -> Node12 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" size" ,fontname="Helvetica"];
+  Node13 [label="SpriteSize",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_sprite_size.html"];
+  Node14 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_color_u1v0\nm_color_u1v1\nm_color_u0v0\nm_color_u0v1" ,fontname="Helvetica"];
+  Node14 [label="VColor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_v_color.html"];
+  Node14 -> Node14 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" BlueColor\nRedColor\nClearColor\nGreenColor\nBlackColor\nWhiteColor" ,fontname="Helvetica"];
+}

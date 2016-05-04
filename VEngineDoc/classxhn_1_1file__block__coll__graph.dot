@@ -1,0 +1,35 @@
+digraph "xhn::file_block"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="xhn::file_block",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="xhn::btree_node\< euint64,\l euint64, UnlockedMapNodeAllocator\l\< range\< euint64 \>, vptr \> \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classxhn_1_1btree__node.html"];
+  Node3 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" parent\nchildren" ,fontname="Helvetica"];
+  Node3 [label="xhn::btree_node\< Addr,\l RefAddr, MapNodeAllocator \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classxhn_1_1btree__node.html"];
+  Node3 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" parent\nchildren" ,fontname="Helvetica"];
+  Node4 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" end_addr\nbegin_addr" ,fontname="Helvetica"];
+  Node4 [label="Addr",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node5 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" tree" ,fontname="Helvetica"];
+  Node5 [label="xhn::btree\< xhn::file\l_block, euint64, euint64,\l xhn::FFileBlockAllocator \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classxhn_1_1btree.html"];
+  Node6 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="MemObject",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_mem_object.html"];
+  Node7 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" allocater" ,fontname="Helvetica"];
+  Node7 [label="xhn::FFileBlockAllocator",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classxhn_1_1_f_file_block_allocator.html"];
+  Node1 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" root" ,fontname="Helvetica"];
+  Node8 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" stream" ,fontname="Helvetica"];
+  Node8 [label="xhn::file_stream",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classxhn_1_1file__stream.html"];
+  Node9 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="RefObject",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_ref_object.html"];
+  Node10 -> Node9 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" weak_count" ,fontname="Helvetica"];
+  Node10 [label="WeakCounter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_weak_counter.html",tooltip="WeakCounter. "];
+  Node6 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 -> Node10 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" lock" ,fontname="Helvetica"];
+  Node11 [label="RefSpinLock",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_ref_spin_lock.html"];
+  Node9 -> Node10 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ref_object" ,fontname="Helvetica"];
+  Node1 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" prev\nnext" ,fontname="Helvetica"];
+  Node12 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" buffer" ,fontname="Helvetica"];
+  Node12 [label="xhn::void_vector",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classxhn_1_1void__vector.html"];
+  Node9 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

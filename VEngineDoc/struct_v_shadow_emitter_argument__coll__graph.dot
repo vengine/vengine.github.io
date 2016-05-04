@@ -1,0 +1,13 @@
+digraph "VShadowEmitterArgument"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="VShadowEmitterArgument",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" shadowTexture" ,fontname="Helvetica"];
+  Node2 [label="xhn::SmartPtr\< VTextureBase \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classxhn_1_1_smart_ptr.html"];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" shadowTextureName" ,fontname="Helvetica"];
+  Node3 [label="xhn::static_string",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classxhn_1_1static__string.html"];
+  Node3 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" empty_string" ,fontname="Helvetica"];
+  Node4 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" lightCamera" ,fontname="Helvetica"];
+  Node4 [label="xhn::SmartPtr\< VCamera \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classxhn_1_1_smart_ptr.html"];
+}

@@ -1,0 +1,34 @@
+digraph "xhn::thread"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="xhn::thread",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="RefObject",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_ref_object.html"];
+  Node3 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" weak_count" ,fontname="Helvetica"];
+  Node3 [label="WeakCounter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_weak_counter.html",tooltip="WeakCounter. "];
+  Node4 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="MemObject",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_mem_object.html"];
+  Node5 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" lock" ,fontname="Helvetica"];
+  Node5 [label="RefSpinLock",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_ref_spin_lock.html"];
+  Node2 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ref_object" ,fontname="Helvetica"];
+  Node6 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_error_message" ,fontname="Helvetica"];
+  Node6 [label="xhn::string_base\< char,\l FStrCmpProc, FDefaultStrProc \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classxhn_1_1string__base.html"];
+  Node7 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_tasks" ,fontname="Helvetica"];
+  Node7 [label="xhn::list\< xhn::SmartPtr,\l xhn::thread::ThreadAllocator \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classxhn_1_1list.html"];
+  Node2 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_allocator" ,fontname="Helvetica"];
+  Node8 [label="xhn::thread::ThreadAllocator",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classxhn_1_1thread_1_1_thread_allocator.html"];
+  Node9 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_head\nm_tail" ,fontname="Helvetica"];
+  Node9 [label="xhn::list_node\< T \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classxhn_1_1list__node.html"];
+  Node4 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 -> Node9 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_iter_prev\nm_iter_next" ,fontname="Helvetica"];
+  Node10 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" s_thread_stack_range_map" ,fontname="Helvetica"];
+  Node10 [label="xhn::range_map\< vptr,\l xhn::thread * \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classxhn_1_1range__map.html"];
+  Node11 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_taskLock\ns_thread_stack_range\l_map_lock" ,fontname="Helvetica"];
+  Node11 [label="xhn::SpinLock",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classxhn_1_1_spin_lock.html",tooltip="SpinLock. "];
+  Node2 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_stack_range" ,fontname="Helvetica"];
+  Node12 [label="xhn::thread::stack\l_range",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classxhn_1_1thread_1_1stack__range.html"];
+}

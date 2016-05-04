@@ -1,0 +1,7 @@
+digraph "Graphical Class Hierarchy"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="xhn::Handle\< T \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classxhn_1_1_handle.html",tooltip="Handle 这个东西的存在是为了解决Command在channel里传递的问题，Handle可以直接拷贝，不像SmartPtr. "];
+}

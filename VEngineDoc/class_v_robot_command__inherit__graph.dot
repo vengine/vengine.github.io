@@ -1,0 +1,37 @@
+digraph "VRobotCommand"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="VRobotCommand",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="VRobotCommandBase",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_v_robot_command_base.html",tooltip="VRobotCommandBase 机器人命令接口 "];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="MemObject",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_mem_object.html"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="CreateAnimCommand",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_create_anim_command.html",tooltip="CreateAnimCommand. "];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="PlayAnimCommand",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_play_anim_command.html"];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="StopAnimCommand",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_stop_anim_command.html"];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="VCreateRenderableCommand",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_v_create_renderable_command.html",tooltip="VCreateRenderableCommand 创建Renderable的命令 "];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="VCreateRenderObjectCommand",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_v_create_render_object_command.html",tooltip="VCreateRenderObjectCommand. "];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="VCreateSceneNodeAndRenderable\lCommand",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_v_create_scene_node_and_renderable_command.html",tooltip="VCreateSceneNodeAndRenderableCommand. "];
+  Node1 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="VCreateSceneNodeCommand",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_v_create_scene_node_command.html",tooltip="VCreateSceneNodeCommand. "];
+  Node1 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="VDeleteRenderableCommand",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_v_delete_renderable_command.html",tooltip="VDeleteRenderableCommand 删除Renderable的命令 "];
+  Node1 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="VDeleteRenderObjectCommand",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_v_delete_render_object_command.html"];
+  Node1 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="VDeleteSceneNodeCommand",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_v_delete_scene_node_command.html",tooltip="VDeleteSceneNodeCommand. "];
+  Node1 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="VModifyAttrCommand",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_v_modify_attr_command.html",tooltip="ModifyAttrCommand. "];
+  Node1 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="VSortCommand",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_v_sort_command.html",tooltip="VSortCommand 排序命令 "];
+  Node1 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="VUserRobotCommand",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_v_user_robot_command.html",tooltip="VUserRobotCommand. "];
+}

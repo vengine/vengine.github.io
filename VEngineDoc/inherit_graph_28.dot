@@ -1,0 +1,7 @@
+digraph "Graphical Class Hierarchy"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="_sfloat4_compare_result",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct__sfloat4__compare__result.html",tooltip="两个 sfloat4 的 比较结果 "];
+}

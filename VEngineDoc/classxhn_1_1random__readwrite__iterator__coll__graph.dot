@@ -1,0 +1,27 @@
+digraph "xhn::random_readwrite_iterator&lt; T, Readproc, Writeproc, Nextproc, Prevproc, Redirectproc, Owner &gt;"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="xhn::random_readwrite\l_iterator\< T, Readproc,\l Writeproc, Nextproc, Prevproc,\l Redirectproc, Owner \>",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="xhn::bidirectional\l_readwrite_iterator\l\< T, Readproc, Writeproc,\l Nextproc, Prevproc \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classxhn_1_1bidirectional__readwrite__iterator.html"];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="xhn::forward_readwrite\l_iterator\< T, Readproc,\l Writeproc, Nextproc \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classxhn_1_1forward__readwrite__iterator.html"];
+  Node4 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="xhn::readwrite_iterator\l\< T, Readproc, Writeproc \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classxhn_1_1readwrite__iterator.html"];
+  Node5 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_readProc" ,fontname="Helvetica"];
+  Node5 [label="Readproc",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node6 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_writeProc" ,fontname="Helvetica"];
+  Node6 [label="Writeproc",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node7 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_ptr" ,fontname="Helvetica"];
+  Node7 [label="T",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node8 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_nextProc" ,fontname="Helvetica"];
+  Node8 [label="Nextproc",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node9 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_prevProc" ,fontname="Helvetica"];
+  Node9 [label="Prevproc",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node10 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_owner" ,fontname="Helvetica"];
+  Node10 [label="Owner",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node11 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_redirectProc" ,fontname="Helvetica"];
+  Node11 [label="Redirectproc",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+}

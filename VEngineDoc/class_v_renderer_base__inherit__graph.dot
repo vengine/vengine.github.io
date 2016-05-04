@@ -1,0 +1,26 @@
+digraph "VRendererBase"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="VRendererBase",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="RefObject",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_ref_object.html"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="SpriteRenderer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_sprite_renderer.html",tooltip="SpriteRenderer. "];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="AppleSpriteRenderer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_apple_sprite_renderer.html"];
+  Node3 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="VGLSpriteRenderer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_v_g_l_sprite_renderer.html",tooltip="SpriteRenderableSorter 精灵渲染器的一个实现 "];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="VCompositor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_v_compositor.html",tooltip="VCompositor 合成器 "];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="VTextureCopyRenderer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_v_texture_copy_renderer.html"];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="VExtendedRenderer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_v_extended_renderer.html",tooltip="VExtendedRenderer 扩展渲染器 "];
+  Node8 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="VForwardRenderer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_v_forward_renderer.html",tooltip="VForwardRenderer 前向渲染器的 "];
+  Node9 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="VBlurryTextureRenderer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_v_blurry_texture_renderer.html",tooltip="VBlurryTextureRenderer 模糊纹理渲染器 "];
+  Node9 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="VDepthTextureRenderer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_v_depth_texture_renderer.html",tooltip="VDepthTextureRenderer 深度纹理渲染器 "];
+}

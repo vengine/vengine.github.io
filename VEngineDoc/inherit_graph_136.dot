@@ -1,0 +1,7 @@
+digraph "Graphical Class Hierarchy"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="PreviewFileSystemItemTree\l(NSTableViewDataSource)",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$category_preview_file_system_item_tree_07_n_s_table_view_data_source_08.html"];
+}

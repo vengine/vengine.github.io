@@ -1,0 +1,14 @@
+digraph "SpriteRenderer"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="SpriteRenderer",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="VRendererBase",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_v_renderer_base.html",tooltip="VRendererBase 渲染器基类 "];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="RefObject",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_ref_object.html"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="AppleSpriteRenderer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_apple_sprite_renderer.html"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="VGLSpriteRenderer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_v_g_l_sprite_renderer.html",tooltip="SpriteRenderableSorter 精灵渲染器的一个实现 "];
+}

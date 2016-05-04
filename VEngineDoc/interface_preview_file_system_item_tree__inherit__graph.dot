@@ -1,0 +1,16 @@
+digraph "PreviewFileSystemItemTree"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="PreviewFileSystemItemTree",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="PreviewFileSystemItemTreeBase",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_preview_file_system_item_tree_base.html"];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="NSObject",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node4 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="\<iFinderGLViewDataSource\>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$protocoli_finder_g_l_view_data_source-p.html"];
+  Node5 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="\<NSObject\>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node6 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="\<HFSPromiseDragDelegate\>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$protocol_h_f_s_promise_drag_delegate-p.html"];
+}

@@ -1,0 +1,47 @@
+digraph "Graphical Class Hierarchy"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="\<HFSPromiseDragDelegate\>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$protocol_h_f_s_promise_drag_delegate-p.html"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="PreviewFileSystemItemTree",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_preview_file_system_item_tree.html"];
+  Node3 [label="NSObject",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="AppImplement",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_app_implement.html"];
+  Node3 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="FileSystemItem",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_file_system_item.html"];
+  Node3 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="iFinderImplement",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interfacei_finder_implement.html"];
+  Node3 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="iFinderIndexSet",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interfacei_finder_index_set.html"];
+  Node3 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="iFinderItemAgent",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interfacei_finder_item_agent.html"];
+  Node3 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="iFinderSelectObject",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interfacei_finder_select_object.html"];
+  Node3 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="MetalVEngine",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_metal_v_engine.html"];
+  Node3 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="ObjCAutolockGate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_obj_c_autolock_gate.html"];
+  Node3 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="ObjCPropertys",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_obj_c_propertys.html"];
+  Node3 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="ObjCUtilities",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_obj_c_utilities.html"];
+  Node3 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="ObjCVEngine",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_obj_c_v_engine.html"];
+  Node3 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="PreviewFileInfo",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_preview_file_info.html"];
+  Node3 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="PreviewFileSystemItemTreeBase",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_preview_file_system_item_tree_base.html"];
+  Node16 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 -> Node17 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="XFileInfo",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_x_file_info.html"];
+  Node18 [label="\<NSObject\>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node18 -> Node19 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node19 [label="\<ExtractImplement\>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$protocol_extract_implement-p.html"];
+  Node18 -> Node20 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node20 [label="\<iFinderGLViewDataSource\>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$protocoli_finder_g_l_view_data_source-p.html"];
+  Node20 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 -> Node21 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node21 [label="\<MetalViewDelegate\>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$protocol_metal_view_delegate-p.html"];
+}

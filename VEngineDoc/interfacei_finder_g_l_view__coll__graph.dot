@@ -1,0 +1,20 @@
+digraph "iFinderGLView"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="iFinderGLView",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="NSView",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" slider" ,fontname="Helvetica"];
+  Node3 [label="XCoverFlowSlider",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_x_cover_flow_slider.html"];
+  Node4 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="NSSlider",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node5 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" gllayer" ,fontname="Helvetica"];
+  Node5 [label="iFinderGLLayer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interfacei_finder_g_l_layer.html"];
+  Node6 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="CAOpenGLLayer",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node7 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" folderChangeGate\nneedReloadDataGate" ,fontname="Helvetica"];
+  Node7 [label="ObjCAutolockGate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_obj_c_autolock_gate.html"];
+  Node8 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="NSObject",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+}
