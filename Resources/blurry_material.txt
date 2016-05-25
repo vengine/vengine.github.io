@@ -1,0 +1,18 @@
+extern
+{
+    float BlurryRadiusSource;
+}
+pass (BlurryRadius : BlurryRadiusSource,
+      tex0         : ColorMap0,
+      tex0Res      : ColorMap0Resolution,
+      texCrd       : VaryTexCoord0,
+      nor          : VaryNormal,
+      binor        : VaryBinormal,
+      tgt          : VaryTangent) [float4 outColor : RenderTarget0]
+{
+    float4 ret;
+    ///MapSampleRGBA(tex0, texCrd)[ret];
+    GaussianBlurMap(tex0, texCrd, tex0Res, BlurryRadius)[ret];
+    outColor = {ret.rg, 0.0, 1.0};
+    ///outColor = {texCrd, 0.0, 1.0};
+}
