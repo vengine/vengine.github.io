@@ -2,7 +2,7 @@ title: Vengine.github.io
 description: 7zMaster
 google_analytics: 
 show_downloads: true
-theme: jekyll-theme-cayman
+theme: jekyll-theme-slate
 
 gems:
   - jekyll-mentions
