@@ -266,7 +266,7 @@ Full-Width Styles
   position: relative;
   max-width: 1920px;
   padding: 20px 10px;
-  margin: 0 auto;
+  margin: 50px auto;
 }
 
 #forkme_banner {
@@ -353,7 +353,7 @@ Full-Width Styles
 }
 
 #main_content_wrap {
-  background: #f2f2f2;
+  background: #79ddf2;
   border-top: 1px solid #111;
   border-bottom: 1px solid #111;
 }
