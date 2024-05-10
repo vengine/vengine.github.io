@@ -19,7 +19,7 @@ body{margin-top:20px;}
 }
 
 .product-card-title>a {
-    color: #222;
+    color: #888;
 }
 
 .font-weight-semibold {
@@ -31,12 +31,15 @@ body{margin-top:20px;}
     margin-bottom: .75rem;
     padding-bottom: .875rem;
     border-bottom: 1px dashed #e2e2e2;
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: normal;
 }
 
 .text-muted {
     color: #888 !important;
+}
+.text-primary {
+    color: #ffffff !important;
 }
 
 .bg-secondary {
@@ -45,13 +48,29 @@ body{margin-top:20px;}
 
 .accordion .accordion-heading {
     margin-bottom: 0;
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 .font-weight-semibold {
     font-weight: 600 !important;
 }
 
+body{
+    background-image: url('images/2048_2732.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment:fixed;
+}
+
+</style>
+<style type="text/css">
+    #div2
+    {
+         text-stroke:0.5px rgb(0, 0, 0);
+         /*兼容Chrome浏览器*/
+         -webkit-text-stroke:0.5px rgb(0, 0, 0);
+    }
 </style>
 
 <body>
@@ -78,67 +97,13 @@ body{margin-top:20px;}
                 </span>
             </h2>
             <!-- Item-->
-            <div class="d-sm-flex justify-content-between my-4 pb-4 border-bottom">
-                <div class="media d-block d-sm-flex text-center text-sm-left">
-                    <!--a class="cart-item-thumb mx-auto mr-sm-1" href="#"><img src="images/3dmaster128x128.t.png" alt="Product"></a-->
-                    <a class="cart-item-thumb mx-auto mr-sm-4" href="#"><img src="images/DamagedHelmet.jpg" alt="Product"></a>
-                    <a class="cart-item-thumb mx-auto mr-sm-4" href="#"><img src="images/Buggy.jpg" alt="Product"></a>
-                    <a class="cart-item-thumb mx-auto mr-sm-4" href="#"><img src="images/Sponza.jpg" alt="Product"></a>
-                    <div class="media-body pt-3">
-                        <h3 class="product-card-title font-weight-semibold border-0 pb-0">3dMaster</h3>
-                        <h5 class="product-card-title font-weight-semibold border-0 pb-0">the 3dMaster is a 3d scene viewer that supports 25+ 3d formats</h5>
-                    </div>
-                </div>
-                <div class="pt-2 pt-sm-0 pl-sm-3 mx-auto mx-sm-0 text-center text-sm-left" style="max-width: 10rem;min-width: 10rem;">
-                    <a href='https://apps.apple.com/us/app/3dmaster/id6449213276'>
-                        <button class="btn btn-primary" type="button">
-                            <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
-                            Learn more
-                        </button>
-                    </a>
-                </div>
+            <div class="d-sm-flex justify-content-between my-4 pb-4 border-bottom" id="first-app">
             </div>
             <!-- Item-->
-            <div class="d-sm-flex justify-content-between my-4 pb-4 border-bottom">
-                <div class="media d-block d-sm-flex text-center text-sm-left">
-                    <!--a class="cart-item-thumb mx-auto mr-sm-1" href="#"><img src="images/icon5.png" alt="Product"></a-->
-                    <a class="cart-item-thumb mx-auto mr-sm-4" href="#"><img src="images/bps_snap2.jpg" alt="Product"></a>
-                    <a class="cart-item-thumb mx-auto mr-sm-4" href="#"><img src="images/bps_snap5.jpg" alt="Product"></a>
-                    <a class="cart-item-thumb mx-auto mr-sm-4" href="#"><img src="images/bps_snap6.jpg" alt="Product"></a>
-                    <div class="media-body pt-3">
-                        <h3 class="product-card-title font-weight-semibold border-0 pb-0">Block Puzzle in Space</h3>
-                        <h5 class="product-card-title font-weight-semibold border-0 pb-0">"Block Puzzle in Space" is a puzzle game. players can place blocks in the scene. if the blocks fill a row or column, the row or column will be eliminated.</h5>
-                    </div>
-                </div>
-                <div class="pt-2 pt-sm-0 pl-sm-3 mx-auto mx-sm-0 text-center text-sm-left" style="max-width: 10rem;min-width: 10rem;">
-                    <a href='https://apps.apple.com/us/app/block-puzzle-in-space/id6478807534'>
-                        <button class="btn btn-primary" type="button">
-                            <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
-                            Learn more
-                        </button>
-                    </a>
-                </div>
+            <div class="d-sm-flex justify-content-between my-4 pb-4 border-bottom" id="second-app">
             </div>
             <!-- Item-->
-            <div class="d-sm-flex justify-content-between my-4 pb-4 border-bottom">
-                <div class="media d-block d-sm-flex text-center text-sm-left">
-                    <!--a class="cart-item-thumb mx-auto mr-sm-1" href="#"><img src="images/fbik_icon-5-5-43_128x128.png" alt="Product"></a-->
-                    <a class="cart-item-thumb mx-auto mr-sm-4" href="#"><img src="images/fbik_snap0.jpg" alt="Product"></a>
-                    <a class="cart-item-thumb mx-auto mr-sm-4" href="#"><img src="images/fbik_snap3.jpg" alt="Product"></a>
-                    <a class="cart-item-thumb mx-auto mr-sm-4" href="#"><img src="images/fbik_snap4.jpg" alt="Product"></a>
-                    <div class="media-body pt-3">
-                        <h3 class="product-card-title font-weight-semibold border-0 pb-0">FullBody Poser</h3>
-                        <h5 class="product-card-title font-weight-semibold border-0 pb-0">FullBody Poser is a realistic style poser-like app, It is based on the self-developed graphics engine called VEngine2 and uses a technique called FullBody IK.</h5>
-                    </div>
-                </div>
-                <div class="pt-2 pt-sm-0 pl-sm-3 mx-auto mx-sm-0 text-center text-sm-left" style="max-width: 10rem;min-width: 10rem;">
-                    <a href='https://apps.apple.com/us/app/fullbody-poser/id6470903777'>
-                        <button class="btn btn-primary" type="button">
-                            <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
-                            Learn more
-                        </button>
-                    </a>
-                </div>
+            <div class="d-sm-flex justify-content-between my-4 pb-4 border-bottom" id="third-app">
             </div>
         </div>
     </div>
@@ -156,73 +121,241 @@ body{margin-top:20px;}
                 </span>
             </h2>
             <!-- Item-->
-            <div class="d-sm-flex justify-content-between my-4 pb-4 border-bottom">
-                <div class="media d-block d-sm-flex text-center text-sm-left">
-                    <!--a class="cart-item-thumb mx-auto mr-sm-1" href="#"><img src="images/3dmaster128x128.t.png" alt="Product"></a-->
-                    <a class="cart-item-thumb mx-auto mr-sm-4" href="#"><img src="images/te.jpg" alt="Product"></a>
-                    <div class="media-body pt-3">
-                        <h3 class="product-card-title font-weight-semibold border-0 pb-0">Tetris</h3>
-                        <h5 class="product-card-title font-weight-semibold border-0 pb-0">An HTML5 Tetris Game</h5>
-                    </div>
-                </div>
-                <div class="pt-2 pt-sm-0 pl-sm-3 mx-auto mx-sm-0 text-center text-sm-left" style="max-width: 10rem;min-width: 10rem;">
-                    <a href='tetris/index.html'>
-                    <button class="btn btn-primary" type="button">
-                        <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
-                        Play now
-                    </button>
-                    </a>
-                </div>
+            <div class="d-sm-flex justify-content-between my-4 pb-4 border-bottom" id="first-game">
             </div>
             <!-- Item-->
-            <div class="d-sm-flex justify-content-between my-4 pb-4 border-bottom">
-                <div class="media d-block d-sm-flex text-center text-sm-left">
-                    <!--a class="cart-item-thumb mx-auto mr-sm-1" href="#"><img src="images/3dmaster128x128.t.png" alt="Product"></a-->
-                    <a class="cart-item-thumb mx-auto mr-sm-4" href="#"><img src="images/ra.jpg" alt="Product"></a>
-                    <div class="media-body pt-3">
-                        <h3 class="product-card-title font-weight-semibold border-0 pb-0">Racer</h3>
-                        <h5 class="product-card-title font-weight-semibold border-0 pb-0">An Outrun-style pseudo-3d racing game in HTML5 and Javascript</h5>
-                    </div>
-                </div>
-                <div class="pt-2 pt-sm-0 pl-sm-3 mx-auto mx-sm-0 text-center text-sm-left" style="max-width: 10rem;min-width: 10rem;">
-                    <a href='racer/index.html'>
-                    <button class="btn btn-primary" type="button">
-                        <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
-                        Play now
-                    </button>
-                    </a>
-                </div>
+            <div class="d-sm-flex justify-content-between my-4 pb-4 border-bottom" id="second-game">
             </div>
             <!-- Item-->
-            <div class="d-sm-flex justify-content-between my-4 pb-4 border-bottom">
-                <div class="media d-block d-sm-flex text-center text-sm-left">
-                    <!--a class="cart-item-thumb mx-auto mr-sm-1" href="#"><img src="images/3dmaster128x128.t.png" alt="Product"></a-->
-                    <a class="cart-item-thumb mx-auto mr-sm-4" href="#"><img src="images/sn.jpg" alt="Product"></a>
-                    <div class="media-body pt-3">
-                        <h3 class="product-card-title font-weight-semibold border-0 pb-0">Snakes</h3>
-                        <h5 class="product-card-title font-weight-semibold border-0 pb-0">An HTML5 Snakes Game</h5>
-                    </div>
-                </div>
-                <div class="pt-2 pt-sm-0 pl-sm-3 mx-auto mx-sm-0 text-center text-sm-left" style="max-width: 10rem;min-width: 10rem;">
-                    <a href='snakes/index.html'>
-                    <button class="btn btn-primary" type="button">
-                        <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
-                        Play now
-                    </button>
-                    </a>
-                </div>
+            <div class="d-sm-flex justify-content-between my-4 pb-4 border-bottom" id="third-game">
             </div>
         </div>
     </div>
-
-
-    
 </div>
 
 <div class="container pb-5 mt-n2 mt-md-n3">
     <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
 </div>
 
+<!-- https://github.com/VickScarlet/lifeRestart -->
+
+<script>
+    function buildAppSlot(
+        appSlot,
+        snap0,
+        snap1,
+        snap2,
+        title,
+        line0,
+        appUrl,
+        learnMore
+    ) {
+        /*
+        snap0 = "images/DamagedHelmet.jpg";
+        snap1 = "images/Buggy.jpg";
+        snap2 = "images/Sponza.jpg";
+        title = "3dMaster";
+        line0 = "the 3dMaster is a 3d scene viewer that supports 25+ 3d formats";
+        appUrl = "https://apps.apple.com/us/app/3dmaster/id6449213276";
+        */
+        appSlot.innerHTML = 
+        "<div class=\"media d-block d-sm-flex text-center text-sm-left\">\n" +
+        "    <a class=\"cart-item-thumb mx-auto mr-sm-4\" href=\"#\"><img src=\"" + snap0 + "\" alt=\"Product\"></a>\n" +
+        "    <a class=\"cart-item-thumb mx-auto mr-sm-4\" href=\"#\"><img src=\"" + snap1 + "\" alt=\"Product\"></a>\n" +
+        "    <a class=\"cart-item-thumb mx-auto mr-sm-4\" href=\"#\"><img src=\"" + snap2 + "\" alt=\"Product\"></a>\n" +
+        "    <div class=\"media-body pt-3\">\n" +
+        "        <h3 id=\"div2\" class=\"product-card-title font-weight-semibold border-0 pb-0 text-primary\">" + title + "</h3>\n" +
+        "        <h5 id=\"div2\" class=\"product-card-title font-weight-semibold border-0 pb-0 text-primary\">" + line0 + "</h5>\n" +
+        "    </div>\n" +
+        "</div>\n" +
+        "<div class=\"pt-2 pt-sm-0 pl-sm-3 mx-auto mx-sm-0 text-center text-sm-left\" style=\"max-width: 10rem;min-width: 10rem;\">\n" +
+        "    <a href='" + appUrl + "'>\n" +
+        "        <button class=\"btn btn-primary\" type=\"button\">\n" +
+        "            <span class=\"spinner-grow spinner-grow-sm\" role=\"status\" aria-hidden=\"true\"></span>\n" +
+        "            " + learnMore + "\n" +
+        "        </button>\n" +
+        "    </a>\n" +
+        "</div>\n";
+    }
+    function buildGameSlot(
+        gameSlot, 
+        snap0,
+        title,
+        line0,
+        gameUrl,
+        playNow
+    ) {
+        /*
+        snap0 = "images/te.jpg";
+        title = "Tetris";
+        line0 = "An HTML5 Tetris Game";
+        gameUrl = "tetris/index.html";
+        playNow = "Play now";
+        */
+        gameSlot.innerHTML = 
+        "<div class=\"media d-block d-sm-flex text-center text-sm-left\">\n" +
+        "    <a class=\"cart-item-thumb mx-auto mr-sm-4\" href=\"#\"><img src=\"" + snap0 + "\" alt=\"Product\"></a>" +
+        "    <div class=\"media-body pt-3\">\n" +
+        "        <h3 id=\"div2\" class=\"product-card-title font-weight-semibold border-0 pb-0 text-primary\">" + title + "</h3>\n" +
+        "        <h5 id=\"div2\" class=\"product-card-title font-weight-semibold border-0 pb-0 text-primary\">" + line0 + "</h5>\n" +
+        "    </div>\n" +
+        "</div>\n" +
+        "<div class=\"pt-2 pt-sm-0 pl-sm-3 mx-auto mx-sm-0 text-center text-sm-left\" style=\"max-width: 10rem;min-width: 10rem;\">\n" +
+        "    <a href='" + gameUrl + "'>\n" +
+        "    <button class=\"btn btn-primary\" type=\"button\">\n" +
+        "        <span class=\"spinner-grow spinner-grow-sm\" role=\"status\" aria-hidden=\"true\"></span>\n" +
+        "        " + playNow + "\n" +
+        "    </button>\n" +
+        "    </a>\n" +
+        "</div>\n";
+    }
+    
+    var isChinese = false;
+    
+    if (navigator.language) {
+      // 非IE浏览器
+      if (navigator.language.toLowerCase().indexOf('zh') > -1) {
+        isChinese = true;
+      } else {
+        isChinese = false;
+      }
+    } else {
+      // IE浏览器
+      if (navigator.userLanguage.toLowerCase().indexOf('zh') > -1) {
+        isChinese = true;
+      } else {
+        isChinese = false;
+      }
+    }
+    
+    //const newElement = document.createElement('div');
+    var firstApp = document.getElementById('first-app');
+    var secondApp = document.getElementById('second-app');
+    var thirdApp = document.getElementById('third-app');
+    if (isChinese) {
+        buildAppSlot(
+            firstApp,
+            "images/DamagedHelmet.jpg",
+            "images/Buggy.jpg",
+            "images/Sponza.jpg",
+            "3D格式大师",
+            "3D格式大师是支持25+3D格式的3D场景浏览器",
+            "https://apps.apple.com/us/app/3dmaster/id6449213276",
+            "了解更多"
+        );
+        buildAppSlot(
+            secondApp,
+            "images/bps_snap2.jpg",
+            "images/bps_snap5.jpg",
+            "images/bps_snap6.jpg",
+            "太空积木",
+            "《太空积木》是一个益智游戏，玩家可以在场景中放置积木，如果积木填满了行或者列，则该行或者列将被消除。",
+            "https://apps.apple.com/us/app/block-puzzle-in-space/id6478807534",
+            "了解更多"
+        );
+        buildAppSlot(
+            thirdApp,
+            "images/fbik_snap0.jpg",
+            "images/fbik_snap3.jpg",
+            "images/fbik_snap4.jpg",
+            "FullBody Poser",
+            "FullBody Poser is a realistic style poser-like app, It is based on the self-developed graphics engine called VEngine2 and uses a technique called FullBody IK.",
+            "https://apps.apple.com/us/app/fullbody-poser/id6470903777",
+            "了解更多"
+        );
+    }
+    else {
+        buildAppSlot(
+            firstApp,
+            "images/DamagedHelmet.jpg",
+            "images/Buggy.jpg",
+            "images/Sponza.jpg",
+            "3dMaster",
+            "the 3dMaster is a 3d scene viewer that supports 25+ 3d formats",
+            "https://apps.apple.com/us/app/3dmaster/id6449213276",
+            "Learn more"
+        );
+        buildAppSlot(
+            secondApp,
+            "images/bps_snap2.jpg",
+            "images/bps_snap5.jpg",
+            "images/bps_snap6.jpg",
+            "Block Puzzle in Space",
+            "\"Block Puzzle in Space\" is a puzzle game. players can place blocks in the scene. if the blocks fill a row or column, the row or column will be eliminated.",
+            "https://apps.apple.com/us/app/block-puzzle-in-space/id6478807534",
+            "Learn more"
+        );
+        buildAppSlot(
+            thirdApp,
+            "images/fbik_snap0.jpg",
+            "images/fbik_snap3.jpg",
+            "images/fbik_snap4.jpg",
+            "FullBody Poser",
+            "FullBody Poser is a realistic style poser-like app, It is based on the self-developed graphics engine called VEngine2 and uses a technique called FullBody IK.",
+            "https://apps.apple.com/us/app/fullbody-poser/id6470903777",
+            "Learn more"
+        );
+    }
+
+    var firstGame = document.getElementById('first-game');
+    var secondGame = document.getElementById('second-game');
+    var thirdGame = document.getElementById('third-game');
+    //alert(firstGame);
+    //firstGame.innerHTML = "<p>This is inserted.</p>";
+    if (isChinese) {
+        buildGameSlot(
+            firstGame,
+            "images/te.jpg",
+            "俄罗斯方块",
+            "一款使用HTML5制作的俄罗斯方块游戏",
+            "tetris/index.html",
+            "现在开玩"
+        );
+        buildGameSlot(
+            secondGame,
+            "images/ra.jpg",
+            "赛车",
+            "一款使用HTML5制作的赛车游戏",
+            "racer/index.html",
+            "现在开玩"
+        );
+        buildGameSlot(
+            thirdGame,
+            "images/sn.jpg",
+            "贪吃蛇",
+            "一款使用HTML5制作的贪吃蛇游戏",
+            "snakes/index.html",
+            "现在开玩"
+        );
+    }
+    else {
+        buildGameSlot(
+            firstGame,
+            "images/te.jpg",
+            "Tetris",
+            "An HTML5 Tetris Game",
+            "tetris/index.html",
+            "Play now"
+        );
+        buildGameSlot(
+            secondGame,
+            "images/ra.jpg",
+            "Racer",
+            "An Outrun-style pseudo-3d racing game in HTML5 and Javascript",
+            "racer/index.html",
+            "Play now"
+        );
+        buildGameSlot(
+            thirdGame,
+            "images/sn.jpg",
+            "Snakes",
+            "An HTML5 Snakes Game",
+            "snakes/index.html",
+            "Play now"
+        );
+    }
+    
+</script>
 
 </body>
 </html>
