@@ -1,82 +1,49 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-<link href="bootstrap.min.css" rel="stylesheet">
 <meta name="description" content="ProductsByHainingXu">
 <meta name="author" content="Haining Xu">
+<meta charset="UTF-8">
 <meta name="keywords" content="games,game,star,app,7z,fantasy,left brain,puzzle,block,cad,fbx,3d,graphics,ios,macos,learn,fullbody,play,now,swift game engine">
 </head>
+
 <style>
-body{margin-top:20px;}
-.cart-item-thumb {
-    display: block;
-    width: 10rem
+
+table {
+  table-layout: fixed;
+  width : 100%;
+  border-collapse: collapse;
+  border: 2px solid rgb(140 140 140);
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
 }
 
-.cart-item-thumb>img {
-    display: block;
-    width: 100%
+caption {
+  caption-side: bottom;
+  padding: 10px;
+  font-weight: bold;
 }
 
-.product-card-title>a {
-    color: #888;
+th {
+  border: 1px solid rgb(160 160 160);
+  padding: 8px 10px;
+  width: 150px;
+}
+td {
+  border: 1px solid rgb(160 160 160);
+  padding: 8px 10px;
 }
 
-.font-weight-semibold {
-    font-weight: 600 !important;
-}
-
-.product-card-title {
-    display: block;
-    margin-bottom: .75rem;
-    padding-bottom: .875rem;
-    border-bottom: 1px dashed #e2e2e2;
-    font-size: 1.5rem;
-    font-weight: normal;
-}
-
-.text-muted {
-    color: #888 !important;
-}
-.text-primary {
-    color: #ffffff !important;
-}
-
-.bg-secondary {
-    background-color: #f7f7f7 !important;
-}
-
-.accordion .accordion-heading {
-    margin-bottom: 0;
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-.font-weight-semibold {
-    font-weight: 600 !important;
-}
-
-body{
-    background-image: url('images/2048_2732.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment:fixed;
-}
 
 </style>
-<style type="text/css">
-    #div2
-    {
-         text-stroke:0.5px rgb(0, 0, 0);
-         /*兼容Chrome浏览器*/
-         -webkit-text-stroke:0.5px rgb(0, 0, 0);
-    }
-</style>
 
-<body>
+
+<body style="background-color:#fef5e7;margin-top:0px;margin-left:0px;padding:0">
 
 <!-- https://bootstrap5.hexschool.com/docs/5.0/utilities/flex/ -->
 
+<!--
 <div class="container pb-5 mt-n2 mt-md-n3">
     <div class="row">
         <div class="col-xl-12 col-md-12">
@@ -91,12 +58,12 @@ body{
     <div class="row">
         <div class="col">
             <h2 class="h6 d-flex flex-wrap justify-content-between align-items-center px-4 py-3 bg-secondary">
-                <span>1</span>
+                <span><a class="item-image mx-auto mr-sm-4" href="#"><img src="en/01.png" alt="Product"></a></span>
             </h2>
         </div>
-        <div class="col">
+        <div class="col d-flex">
             <h2 class="h6 d-flex flex-wrap justify-content-between align-items-center px-4 py-3 bg-secondary">
-                <span>2</span>
+                <span>4</span>
             </h2>
         </div>
     </div>
@@ -113,15 +80,160 @@ body{
             </h2>
         </div>
     </div>
+    
+    
+</div>
+-->
+<!--
+<div id="title">
+    <span style="transform: translate(50%, 50%);">
+        <h1 style="text-align: center;">主要的网页标题</h1>
+    </span>
+</div>
+-->
+<div id="title" class="title_container">
+    <span>
+      <h1><font color="#abb2b9">3dMaster</font></h1>
+    </span>
+    <span style="padding: 10px;">
+      <h3><font color="#808b96">for macOS</font></h3>
+    </span>
+</div>
+
+<div id="header">
+    <div id="icon" style="padding-left:128px; padding-bottom:32px; width:128px;height:128px;"><img id="icon_image" src="3dmaster.t.png"></div>
+    <div id="right_text"><font color="#a93226"><h2>Thank you for choosing this app</h2></font></div>
+</div>
+
+<div id="container">
+ <!--
+    <div class="row"><h1 style="margin-bottom:0;-webkit-text-stroke-width: 2px;-webkit-text-stroke-color: white;">主要的网页标题</h1></div>
+-->
+<!--
+    <div class="left_col"><h1 style="text-align:left;">左边的</h1></div>
+     
+    <div class="right_col"><h1 style="text-align:right;">右边的</h1></div>
+-->
+    <div class="row"><h1 style="text-align:left;">Document Window:</h1></div>
+
+    <div class="image_row"><img class="image" src="en/01.jpg"></div>
+     
+    
+     
+    <div class="row"><h1 style="text-align:left;">Scene Window:</h1></div>
+
+    <div class="image_row"><img class="image" src="en/02.jpg"></div>
+
+    <div class="row"><h1 style="text-align:left;">Camera Operations:</h1></div>
+    <div style="max-width: 100%;">
+        <table>
+            <tr>
+                <th scope="row">Left-dragging</th>
+                <td>pan the camera.</td>
+            </tr>
+            <tr>
+                <th scope="row">Right-dragging</th>
+                <td>rotate the camera around look at point.</td>
+            </tr>
+            <tr>
+                <th scope="row">Scroll</th>
+                <td>zoom the camera in or out.</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="row"><h1 style="text-align:left;">Lighting Panel:</h1></div>
+    <div class="image_row"><img class="image" src="en/04.jpg"></div>
+
+    <div class="row"><h1 style="text-align:left;">Outline Panel:</h1></div>
+    <div class="image_row"><img class="image" src="en/05.jpg"></div>
+
+    <div class="row"><h1 style="text-align:left;">Animation Panel:</h1></div>
+    <div class="image_row"><img class="image" src="en/06.jpg"></div>
+     
 </div>
 
 
 
-
-
 <script>
+function relayout(event) {
+    var headerColor = "#7b241c"
+    var w = window.innerWidth;
+    var title = document.getElementById("title");
+    if (title) {
+        title.style.cssText = "background-color:" + headerColor + ";padding-bottom:5px; display:flex; align-items:baseline; justify-content: center; height:80px;width:" + w.toString() + "px;"
+    }
+
+    var header = document.getElementById("header");
+    if (header) {
+        header.style.cssText = "background-color:" + headerColor + ";display:flex;justify-content: flex-start; width:" + w.toString() + "px;height=192px;"  
+    }
+    var iconImage = document.getElementById("icon_image");
+    if (iconImage) {
+        iconImage.setAttribute("width", 128);
+        iconImage.setAttribute("height", 128);
+    }
+    var rightText = document.getElementById("right_text");
+    if (rightText) {
+        rightText.style.cssText = "width:" + (w - 128 - 128).toString() + "px;height=128px;"  
+        rightText.style.cssText += "display:flex;flex-direction: row;justify-content: flex-end;"
+        rightText.style.cssText += "padding-top:80px;padding-right:128px;"
+        //rightText.style.cssText += "background-color:#ffffff;"
+    }
     
+    var root = document.getElementById("container");
     
+    var rootX = 0
+    var rootW = 0
+    if (w > 1024) {
+        rootX = (w - 1024) * 0.5
+        root.style.cssText = "width:1024px;margin-left:" + ((w - 1024) * 0.5).toString() + "px;"
+        rootW = 1024
+    } else {
+        rootX = 0
+        root.style.cssText = "width:" + w.toString() + "px;margin-left:0px;"
+        rootW = w
+    }
+
+    var leftCols = document.getElementsByClassName("left_col");
+    for (let i = 0; i < leftCols.length; i++) {
+        var e = leftCols[i];
+        //e.style.cssText = "background-color:#FFD700;height:100px;float:left;width:" + (rootW - 200).toString() + "px;margin-left:0px;"
+        e.style.cssText = "height:100px;float:left;width:" + (rootW - 200).toString() + "px;margin-left:0px;"
+    }
+
+    var rightCols = document.getElementsByClassName("right_col");
+    for (let i = 0; i < rightCols.length; i++) {
+        var e = rightCols[i];
+        //e.style.cssText = "background-color:#EEEEEE;height:100px;width:200px;float:left;"
+        e.style.cssText = "height:100px;width:200px;float:left;"
+    }
+
+    var imageRows = document.getElementsByClassName("image_row");
+    for (let i = 0; i < imageRows.length; i++) {
+        var e = imageRows[i];
+        //e.style.cssText = "background-color:#FFD700;height:" + (rootW / 16.0 * 10.0).toString() + "px;float:left;width:" + rootW.toString() + "px;margin-left:0px;"
+        e.style.cssText = "height:" + (rootW / 16.0 * 10.0).toString() + "px;float:left;width:" + rootW.toString() + "px;margin-left:0px;"
+    }
+
+    var images = document.getElementsByClassName("image");
+    for (let i = 0; i < images.length; i++) {
+        var e = images[i];
+        e.setAttribute("width", rootW);
+        e.setAttribute("height", rootW / 16.0 * 10.0);
+    }
+
+    var rows = document.getElementsByClassName("row");
+    for (let i = 0; i < rows.length; i++) {
+        var e = rows[i];
+        //e.style.cssText = "background-color:#FFA500;clear:both;width:" + rootW.toString() + "px;margin-left:0px;float:left;" 
+        e.style.cssText = "clear:both;width:" + rootW.toString() + "px;margin-left:0px;float:left;" 
+    }
+}
+
+window.addEventListener('resize', relayout, true);
+
+relayout()
 </script>
 
 </body>
